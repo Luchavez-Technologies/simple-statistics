@@ -1,0 +1,30 @@
+<?php
+
+namespace Database\Factories;
+
+// Model
+use {{ modelClass }};
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * Class {{ modelName }}
+ *
+ * @author James Carlo Luchavez <jamescarlo.luchavez@fligno.com>
+ */
+class StatisticsFactory extends Factory
+{
+    protected $model = {{ modelName }}::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition(): array
+    {
+        return [
+            //
+        ];
+    }
+}
