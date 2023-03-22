@@ -1,0 +1,50 @@
+{
+    "name": "luchavez/simple-statistics",
+    "description": "A simple approach to adding Statistics to Laravel applications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Carlo S. Luchavez",
+            "email": "jamescarloluchavez@gmail.com",
+            "homepage": "https://www.linkedin.com/in/jsluchavez"
+        }
+    ],
+    "homepage": "https://github.com/luchmewep/simple-statistics",
+    "keywords": ["Laravel", "SimpleStatistics"],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "~7|~8",
+        "luchavez/starter-kit": "^1.0.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luchavez\\SimpleStatistics\\": "src/",
+            "Database\\Factories\\": "database/factories",
+            "Database\\Seeders\\": "database/seeders"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Luchavez\\SimpleStatistics\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luchavez\\SimpleStatistics\\SimpleStatisticsServiceProvider"
+            ],
+            "aliases": {
+                "SimpleStatistics": "Luchavez\\SimpleStatistics\\Facades\\SimpleStatistics"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev",
+            "dev-develop": "1.0.x-dev"
+        }
+    }
+}
